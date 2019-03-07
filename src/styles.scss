@@ -6,11 +6,17 @@ body {
 }
 
 ul {
-    max-width: 600px;
     color: #dedede;
     list-style: none;
-    margin: 50px auto;
     padding: 10px;
+}
+
+.banner {
+    height: 300px;
+}
+
+.list {
+    height: 500px;
 }
 
 .list li {
@@ -26,3 +32,10 @@ ul {
 .center {
     text-align: center;
 }
+
+.example-viewport {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+  }
+  
