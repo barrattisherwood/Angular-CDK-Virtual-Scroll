@@ -1,18 +1,49 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center; height: 100%" #gridtemplate>
-  <h1>
-    {{ title }}
-  </h1>
+<div class="flex-container" style="text-align:center; height: 100%" #gridtemplate>
   <div class="banner">
-    Offer
+    <h1>
+      {{ title }} Offer
+    </h1>
   </div>
-  <ul class="list">
-    <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
-      <ng-container *cdkVirtualFor="let n of numbers">
-        <li>{{n}}</li>
+  <div class="list flex-item">
+    <cdk-virtual-scroll-viewport itemSize="215" class="example-viewport">
+      <ng-container *cdkVirtualFor="let row of chunkedArray">
+        <div class="grid-row"><img *ngFor="let item of row" src="{{item.url}}" /></div>
       </ng-container>
     </cdk-virtual-scroll-viewport>
-  </ul>
+  </div>
+  <div class="banner">
+    <h1>
+      Content
+    </h1>
+  </div>  
+  <div class="banner">
+    <h1>
+      Content
+    </h1>
+  </div>  
+  <div class="banner">
+    <h1>
+      Content
+    </h1>
+  </div>  
+  <div class="banner">
+    <h1>
+      Content
+    </h1>
+  </div>  
+  <div class="banner">
+    <h1>
+      Content
+    </h1>
+  </div>  
+
+  <div class="banner">
+    <h1>
+      Footer
+    </h1>
+  </div>      
+
 </div>
 
 
